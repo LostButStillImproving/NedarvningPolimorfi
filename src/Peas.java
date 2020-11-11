@@ -1,3 +1,5 @@
+import FreezeBehavior.Freezebehavior;
+
 /**
  * Developed by András Ács (acsandras@gmail.com)
  * Zealand / www.zealand.dk
@@ -5,6 +7,12 @@
  * 09/11/2020
  */
 
-public class Peas extends Grønsag {
+public class Peas extends Grønsag  {
+
+    public Peas(Freezebehavior fb) {
+        super(fb);
+    }
+
+    public void freeze(){ fb.freeze(); }
 
 }
